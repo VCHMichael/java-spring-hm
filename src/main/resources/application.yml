@@ -1,0 +1,17 @@
+server:
+  port: 9000
+spring:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+---
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+  config:
+    activate:
+      on-profile: prod
